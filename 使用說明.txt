@@ -40,7 +40,11 @@
 ■ 聯絡方式
   content.js 最上方 contact: 填入 email / instagram / linkedin，留空就不顯示。
 
-■ 放到網路上（讓別人用手機看）
-  最簡單：到 https://app.netlify.com/drop ，把整個「作品集網站」資料夾拖進去，
-  就會得到一個公開網址。之後更新內容，再拖一次即可。
-  （也可用 GitHub Pages、Vercel 等免費空間。）
+■ 網站網址（已公開）
+  https://aprol0831.github.io/portfolio/
+  GitHub 原始碼：https://github.com/aprol0831/portfolio
+
+■ 修改後同步到網站
+  改完 content.js 或新增照片後，雙擊「發布到網站.bat」，
+  約 1 分鐘後網址上的網站就會更新（手機記得重新整理）。
+  ※ 若請 Claude 修改網站，Claude 也會在改完後自動同步。
