@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>劉承儒 Portfolio</title>
+  <meta name="description" content="劉承儒 LIU CHENG JU — 建築作品集：Peter Cook 事務所一年實務、國際競圖、展覽設計與專案管理。">
+  <meta name="theme-color" content="#EEECE7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="guides" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+  <header class="bar">
+    <a class="bar__id" href="#top"><b data-bind="nameEn"></b><span data-bind="name"></span></a>
+    <nav class="bar__nav">
+      <a href="#works">作品<em>Works</em></a>
+      <a href="#about">關於<em>About</em></a>
+      <a href="#journal">心得<em>Journal</em></a>
+      <a href="#contact">聯絡<em>Contact</em></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="mono hero__meta"><span>Portfolio 2025 — 2026</span><span>London · 51.5072°N 0.1276°W</span></p>
+      <div class="profile">
+        <figure class="profile__photo" id="profilePhoto"></figure>
+        <div class="profile__txt">
+          <p class="profile__name"><span data-bind="name"></span> <b data-bind="nameEn"></b></p>
+          <p class="mono" data-bind="role"></p>
+        </div>
+      </div>
+      <h1 class="hero__title" data-bind="tagline"></h1>
+      <p class="hero__en" data-bind="taglineEn"></p>
+      <div class="hero__row">
+        <p class="hero__intro" data-bind="intro"></p>
+      </div>
+      <figure class="hero__media" id="heroMedia"></figure>
+    </section>
+
+    <section class="section section--tight wrap" id="works">
+      <header class="section__head">
+        <p class="mono">01 — Selected Works</p>
+        <h2>作品</h2>
+        <p class="mono section__count" id="workCount"></p>
+      </header>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <header class="section__head">
+        <p class="mono">02 — About &amp; CV</p>
+        <h2>關於我</h2>
+      </header>
+      <div class="about">
+        <div class="about__body" id="aboutBody"></div>
+      </div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="section wrap" id="journal">
+      <header class="section__head">
+        <p class="mono">03 — <span data-bind="journal.titleEn"></span></p>
+        <h2 data-bind="journal.title"></h2>
+      </header>
+      <div class="chapters" id="chapters"></div>
+      <div class="strip" id="strip"></div>
+    </section>
+
+    <section class="section wrap" id="news" hidden>
+      <header class="section__head">
+        <p class="mono">04 — Exhibition</p>
+        <h2>展覽資訊</h2>
+      </header>
+      <ul class="news" id="newsList"></ul>
+    </section>
+  </main>
+
+  <footer class="foot wrap" id="contact">
+    <p class="mono">Contact</p>
+    <p class="foot__big"><span data-bind="name"></span> <span class="foot__en" data-bind="nameEn"></span></p>
+    <ul class="foot__links" id="contactLinks"></ul>
+    <p class="mono foot__small">© <span id="year"></span> <span data-bind="nameEn"></span> · All works shown with credit to their authors.</p>
+  </footer>
+
+  <!-- 作品內頁 -->
+  <article class="detail" id="detail" aria-hidden="true" tabindex="-1">
+    <div class="detail__bar">
+      <p class="mono" id="detailIndex"></p>
+      <button class="icon-btn" id="detailClose" aria-label="關閉">
+        <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+    <div class="detail__body wrap" id="detailBody"></div>
+  </article>
+
+  <!-- 燈箱 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="icon-btn lb__close" id="lbClose" aria-label="關閉">
+      <svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <button class="icon-btn lb__nav lb__prev" id="lbPrev" aria-label="上一張">
+      <svg viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"/></svg>
+    </button>
+    <div class="lb__stage" id="lbStage"></div>
+    <button class="icon-btn lb__nav lb__next" id="lbNext" aria-label="下一張">
+      <svg viewBox="0 0 24 24"><path d="M9 4l8 8-8 8"/></svg>
+    </button>
+    <p class="lb__cap mono" id="lbCap"></p>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

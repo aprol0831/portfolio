@@ -1,0 +1,46 @@
+劉承儒 作品集網站｜使用說明
+==================================================
+
+■ 打開網站
+  直接雙擊 index.html，用 Chrome / Edge 開啟即可。
+
+■ 資料夾結構
+  index.html        網頁本體（不用改）
+  content.js        ★ 所有文字、作品、照片清單都在這裡改
+  media/            照片與影片（每個作品一個資料夾）
+      01-cheongju/  02-bournemouth/  03-cherry-basket/  04-fitzrovia/
+      05-persiana/  06-pm/（證照，請自行新增）  07-esp/  08-artists/  journal/
+  assets/           網站樣式與程式（不用改）
+  tools/optimize.py 照片 / 影片壓縮工具
+
+■ 修改文字
+  用記事本或 VS Code 打開 content.js，改引號 " " 裡的文字 → 存檔 → 網頁按 F5。
+  ※ 引號、逗號不要刪掉，否則網頁會變空白。改壞了可以按 Ctrl+Z 復原。
+
+■ 新增照片 / 影片（建議流程）
+  1. 在「作品集網站」資料夾空白處按右鍵 →「在終端機中開啟」
+  2. 第一次使用先安裝工具（只需一次）：
+       python -m pip install pillow imageio-ffmpeg
+  3. 執行壓縮（可一次放多個檔案，把檔案直接拖進終端機就會出現路徑）：
+       python tools/optimize.py 06-pm "C:\路徑\證書.jpg"
+  4. 終端機最後會印出一行，例如 "06-pm/certificate.jpg",
+     把它貼進 content.js 對應作品的 media: [ ] 裡，例如：
+       media: [ { src: "06-pm/certificate.jpg", caption: "證書" } ],
+
+  為什麼要壓縮？iPhone 的 .MOV 在 Chrome 常常無法播放，而且原檔太大、手機載入很慢。
+  工具會自動轉成網頁通用的 .mp4（H.264）與 2000px 的 .jpg，並產生影片封面。
+
+  若照片本來就是小於 1MB 的 .jpg，也可以直接複製進 media/ 資料夾，不經過工具。
+
+■ 換封面 / 調整順序
+  - media 清單的「第一個」就是封面，把想當封面的那行移到最上面即可。
+  - 或在作品裡加一行 cover: "資料夾/檔名.jpg",
+  - 8 格的順序 = content.js 裡 projects 的順序，整段剪下貼上就能調整。
+
+■ 聯絡方式
+  content.js 最上方 contact: 填入 email / instagram / linkedin，留空就不顯示。
+
+■ 放到網路上（讓別人用手機看）
+  最簡單：到 https://app.netlify.com/drop ，把整個「作品集網站」資料夾拖進去，
+  就會得到一個公開網址。之後更新內容，再拖一次即可。
+  （也可用 GitHub Pages、Vercel 等免費空間。）
