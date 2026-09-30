@@ -22,7 +22,7 @@ from PIL import Image, ImageOps
 
 Image.MAX_IMAGE_PIXELS = None
 
-IMAGE_EXT = {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp", ".bmp", ".heic"}
+IMAGE_EXT = {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp", ".bmp", ".heic", ".jpx", ".jp2"}
 VIDEO_EXT = {".mov", ".mp4", ".m4v", ".avi", ".mkv", ".webm"}
 MAX_IMAGE = 2000   # 照片長邊最大像素
 MAX_VIDEO = 1280   # 影片長邊最大像素

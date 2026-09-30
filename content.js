@@ -282,6 +282,70 @@ window.SITE = {
     },
 
     {
+      id: "hearth",
+      tag: "評選中",             // 得獎公布後可改成例如 "首獎"
+      title: "圍爐",
+      titleEn: "HEARTH",
+      category: "國際競圖 · Winter Stations",
+      year: "2026",
+      location: "Woodbine Beach, Toronto, Canada",
+      role: "設計、構造與預算規劃",
+      summary: "十片紅色板片圍繞海灘救生員座椅，彼此倚靠成圈——冬日海灘上的一座營火。",
+      facts: [
+        ["競圖", "Winter Stations 2027｜加拿大多倫多冬季海灘裝置"],
+        ["規模", "直徑 4.8 m × 高 2.5 m"],
+        ["構件", "10 片相同板片（1483 × 2050 × 84 mm）"],
+        ["預算", "CA$13,909 / 上限 15,000"],
+        ["狀態", "評選結果尚未公布"],
+      ],
+      body: [
+        "營火是最古老的建築：沒有牆、沒有屋頂，只有一圈面向中心的人——每個人被火溫暖，也同時替火擋住風。多倫多 Woodbine 海灘其實已經有它的「火」：整個夏天，紅色的救生員座椅是所有人目光的中心；到了冬天，它卻冷冷地空著。",
+        "HEARTH 把缺少的那一圈補回來。十片紅色板片圍繞座椅，每一片都只以一個點著地，在肩膀的高度倚靠著左右的鄰居——沒有任何一片能獨自站立，是這個圈讓它們彼此撐住。走進圈內，風就停了；板片內側的鋁鏡面映出圍坐的人。座椅是空的，但圍繞它的圈不是。",
+        "構造上延續事務所的務實精神：10 片相同板片、20 組相同的鋼製節點，不需基礎，以裝滿海灘沙的木箱配重；展期結束後沙回到海灘，板片可平放拆運、再利用或回收。總預算 CA$13,909，控制在 15,000 上限之內。",
+      ],
+      media: [
+        { src: "09-hearth/hero.jpg", caption: "十片紅色板片圍繞冬日的救生員座椅" },
+        { src: "09-hearth/mirror-interior.jpg", caption: "內側鋁鏡面映出圍坐的人" },
+        { src: "09-hearth/aerial.jpg", caption: "鳥瞰：一個彼此倚靠的圈" },
+        { src: "09-hearth/panel-layers.jpg", caption: "板片構造：鏡面、內外層板、木肋與沙箱基座" },
+        { src: "09-hearth/board-concept-budget.jpg", caption: "競圖圖板：概念、預算與材料" },
+      ],
+    },
+
+    {
+      id: "nasij",
+      tag: "評選中",             // 得獎公布後可改成例如 "首獎"
+      title: "織蔭",
+      titleEn: "NASĪJ",
+      category: "城市雕塑競圖 · Urban Sculpture",
+      year: "2026",
+      location: "Tharwa Sea Front, Saudi Arabia",
+      role: "設計、構造規劃",
+      summary: "將貝都因 Al-Sadu 編織化為多面體遮蔭頂棚：白天是海邊的客廳，夜晚是水上的燈籠。",
+      facts: [
+        ["類型", "沙烏地阿拉伯城市雕塑競圖"],
+        ["地點", "Tharwa 濱海步道"],
+        ["文化", "Al-Sadu 編織（UNESCO 人類非物質文化遺產，2020）"],
+        ["構造", "回收鋁板外殼 · 鍍鋅鋼桁架 · 石材配重基座"],
+        ["狀態", "評選結果尚未公布"],
+      ],
+      body: [
+        "阿拉伯人以編織帳篷迎接烈日——用 Al-Sadu 布料製成的貝都因帳篷，帶著大地色彩與幾何圖騰。NASĪJ（阿拉伯語「織物」）把這份編織抬升為海濱上的多面體頂棚：從步道上看，是這個民族的編織圖騰；走進頂棚下，一片沉靜的藍天在海面上方彎曲，成為水邊的客廳。",
+        "頂棚回應沙烏地人在水邊相聚的方式——在陰影裡、在黃昏時、和家人一起。孩子在淺水池邊玩水，陽光從池面反射到拱頂下方；長椅面向大海，讓人坐下來看潮汐。夜晚，光從外殼的每一道縫隙透出，整座頂棚倒映在水中，成為一盞水上的燈籠。",
+        "每種材料都選擇能在當地取得與加工、不需重型機具就能組裝：可平折的回收鋁板外殼、承重的熱浸鍍鋅鋼桁架、抵抗海風的石材配重基座。沒有濕式工程、不需模板——低造價來自設計，而不是偷工減料。",
+      ],
+      media: [
+        { src: "10-nasij/hero-dusk.jpg", caption: "黃昏的 Tharwa 濱海步道" },
+        { src: "10-nasij/night-lantern.jpg", caption: "夜晚：水上的燈籠" },
+        { src: "10-nasij/under-canopy.jpg", caption: "頂棚下：藍天般的內層與淺水池" },
+        { src: "10-nasij/facets.jpg", caption: "Al-Sadu 編織化為多面體外殼" },
+        { src: "10-nasij/aerial.jpg", caption: "鳥瞰" },
+        { src: "10-nasij/plan.jpg", caption: "配置平面" },
+        { src: "10-nasij/board-structure.jpg", caption: "構造層次：外殼、桁架、基座與內層" },
+      ],
+    },
+
+    {
       id: "pm",
       coverFit: "contain",
       title: "PRINCE2® 專案經理證照",

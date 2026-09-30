@@ -132,7 +132,7 @@ main, .foot { position: relative; z-index: 1; }
 /* ============ Works grid (8 cells) ============ */
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 12px; }
 @media (min-width: 720px) { .grid { gap: 40px 24px; } }
-@media (min-width: 1100px) { .grid { grid-template-columns: repeat(4, 1fr); gap: 56px 24px; } }
+@media (min-width: 1100px) { .grid { grid-template-columns: repeat(5, 1fr); gap: 56px 20px; } }
 .card { display: block; text-align: left; width: 100%; }
 .card__img { position: relative; aspect-ratio: 4/5; overflow: hidden; background: var(--paper-2); outline: 1px solid var(--line); outline-offset: -1px; }
 .card__img img, .card__img video { width: 100%; height: 100%; object-fit: cover; transition: transform 1s cubic-bezier(.2,.7,.2,1), filter .6s; }
