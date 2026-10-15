@@ -30,7 +30,7 @@ window.SITE = {
 
   // 數字亮點（顯示在「關於我」區塊，可自由增減）
   stats: [
-    { value: "9", unit: "+ yrs", label: "建築與空間相關經歷" },
+    { value: "1,300", unit: "席", label: "清州音樂廳國際競圖" },
     { value: "4", unit: "國際展覽", label: "全球展覽空間規劃" },
     { value: "2nd", unit: "Prize", label: "Cruïlla 音樂節舞台競圖" },
     { value: "20", unit: "+ 場", label: "300–1,000+ 人大型活動策劃" },
@@ -40,9 +40,9 @@ window.SITE = {
   about: {
     title: "Architectural Designer",
     summary:
-      "Registered Architect & PRINCE2 Project Manager with 9+ years' experience. Led complex spatial planning, concert hall competitions, gallery layouts, and on-site construction management at a premier London studio.",
+      "Registered Architect & PRINCE2 Project Manager. Led complex spatial planning, concert hall competitions, gallery layouts, and on-site construction management at a premier London studio.",
     summaryZh:
-      "中華民國建築師暨 PRINCE2 專案經理，具 9 年以上相關經歷。於倫敦 Peter Cook 事務所主導音樂廳競圖的空間規劃、國際展覽佈局，以及巴塞隆納現場施工管理。",
+      "中華民國建築師暨 PRINCE2 專案經理。於倫敦 Peter Cook 事務所主導音樂廳競圖的空間規劃、國際展覽佈局，以及巴塞隆納現場施工管理。",
     education: [
       { title: "Master of Architecture 建築碩士", org: "National Taiwan University of Science and Technology 國立台灣科技大學", time: "2025", note: "GPA 4.2 / 4.3" },
     ],
@@ -137,6 +137,7 @@ window.SITE = {
         "方案跳脫傳統場館的封閉型態，借鑑倫敦巴比肯中心，在基地邊緣嵌入口袋圖書館、親子空間與綠植區，以鮮明紅色意象構築連結市民日常與專業聲學的「城市客廳」。",
       ],
       media: [
+        { src: "01-cheongju/hall-concert.jpg", caption: "葡萄園式古典音樂廳：演出情境" },
         { src: "01-cheongju/hall.jpg", caption: "葡萄園式古典音樂廳" },
         { src: "01-cheongju/exterior-night.jpg", caption: "夜間鳥瞰：嵌入地景的文化綜合體" },
         { src: "01-cheongju/lobby.jpg", caption: "不同高程的穿廊與挑高大廳" },
@@ -146,6 +147,7 @@ window.SITE = {
         { src: "01-cheongju/long-facade.jpg", caption: "立面" },
         { src: "01-cheongju/white-model.jpg", caption: "量體模型" },
         { src: "01-cheongju/massing-diagram.jpg", caption: "量體與動線配置" },
+        { src: "01-cheongju/plan-garage.jpg", caption: "地下停車場平面（-4.00 層，130 車位）" },
         { src: "01-cheongju/plan-ground.jpg", caption: "一樓平面" },
         { src: "01-cheongju/plan-level1.jpg", caption: "二樓平面" },
         { src: "01-cheongju/section.jpg", caption: "剖面" },
